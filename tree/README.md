@@ -1,1 +1,1 @@
-# Algorithms with tree
+# Tree algorithms
