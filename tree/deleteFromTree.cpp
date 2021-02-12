@@ -42,7 +42,7 @@ class Tree {
     }
 
     void fillTree() {
-      ifstream fin("input.txt");
+      ifstream fin("input2.txt");
       fin >> elemDel;
       int val;
       while(fin >> val) {
