@@ -1,4 +1,4 @@
-# Recursion
+# Recurrence
 
 ## binStr.cpp - Count binary strings
 
