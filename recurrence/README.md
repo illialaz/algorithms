@@ -19,3 +19,9 @@ frog can jump 2 or 3 lilies ahead\
 in each lily it eats all the mosquitoes\
 find max num of mosquitoes that frog can eat\
 frog should be at the last lily after all jumps\
+
+## mulMatrix.cpp
+
+s - number of matrices\
+next s strings - dim of matrices (n \* m)\
+count min number of multiplications\
