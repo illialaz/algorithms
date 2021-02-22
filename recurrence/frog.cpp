@@ -1,3 +1,8 @@
+/* input.txt
+6
+1 100 3 4 1000
+*/
+
 #include <iostream>
 
 using namespace std;
