@@ -28,10 +28,10 @@ count min number of multiplications\
 
 ## palindrome.cpp
 
-s - input string
-delete min number of elems from string to get palindrome
+s - input string\
+delete min number of elems from string to get palindrome\
 
 ## squares.cpp
 
-n, m - dim of bin matrix
-find all square matrices from matrix, each elem of which equals to 1
+n, m - dim of bin matrix\
+find all square matrices from matrix, each elem of which equals to 1\
