@@ -14,5 +14,11 @@ check if binary heap is correct(value of child >= value of current elem)\
 
 ## binHeap.cpp
 
-n - num of elems
-find height of each tree in binomial heap
+n - num of elems\
+find height of each tree in binomial heap\
+
+# sumArray.cpp
+
+arr - array
+You can add number to arr[i] and count sum of array from i to j position with the help of tree\
+It is very fast, it's complexity is around O(1)
