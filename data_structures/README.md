@@ -22,3 +22,11 @@ find height of each tree in binomial heap\
 arr - array
 You can add number to arr[i] and count sum of array from i to j position with the help of tree\
 It is very fast, it's complexity is around O(1)
+
+## buildRoads.cpp && destroyRoads.cpp
+
+Tasks are about DSU(Disjoint Set Union)\
+you have cyties and roads between them.\
+First task (buildRoads.cpp) is about "connected components",\
+you should count num of them after adding each road.\
+The next task(destroyRoads.cpp) is reversed. Tou have all the\ roads, it is one component, and each step you destroy one road.\ You should find, which step will be the last, after which your\ roads will be not one connected component.
