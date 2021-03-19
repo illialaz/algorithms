@@ -30,3 +30,10 @@ you have cyties and roads between them.\
 First task (buildRoads.cpp) is about "connected components",\
 you should count num of them after adding each road.\
 The next task(destroyRoads.cpp) is reversed. Tou have all the\ roads, it is one component, and each step you destroy one road.\ You should find, which step will be the last, after which your\ roads will be not one connected component.
+
+## subsequence.cpp
+
+You have sequence and number k\
+k = 1: find max non decrease subsequence\
+k = 2: find max subsequence, every neighbouring elements of which are coprime(gcd(a, b) > 1 if a, b are neighbours)\
+k = 3: mix of 2 first, max non decrease subsequence, each neighbouring elements of which are coprime\
