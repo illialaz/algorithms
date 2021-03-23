@@ -37,3 +37,10 @@ You have sequence and number k\
 k = 1: find max non decrease subsequence\
 k = 2: find max subsequence, every neighbouring elements of which are coprime(gcd(a, b) > 1 if a, b are neighbours)\
 k = 3: mix of 2 first, max non decrease subsequence, each neighbouring elements of which are coprime\
+
+## hashTable.cpp
+
+Create hashTable from input data and print it\
+m - length of hashtable\
+c - constant for hashFunc\
+n - number of elems to add to hashtable\
