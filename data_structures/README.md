@@ -44,3 +44,10 @@ Create hashTable from input data and print it\
 m - length of hashtable\
 c - constant for hashFunc\
 n - number of elems to add to hashtable\
+
+## avlTree.cpp
+
+n - len of first array
+m - length of second array
+You should get new array, which contains all elements from first array, except those,\
+that are present in second sequence p times, where p is a prime number.
