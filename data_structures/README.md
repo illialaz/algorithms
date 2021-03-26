@@ -51,3 +51,15 @@ n - len of first array
 m - length of second array
 You should get new array, which contains all elements from first array, except those,\
 that are present in second sequence p times, where p is a prime number.
+
+## blackbox.cpp
+
+n - number of "Get" operations
+m - number of "Add" operations
+toFind - sorted array of numbers, in which time we should get number
+toAdd - sequence of numbers which are already added
+
+We have sequence of numbers which we should add.\
+Then we have sequence of number when to get "i"(at start i = 0) number.\
+If size of toAdd array equals to toFind[i] then you should increment i and find\
+i element of sorted sequence of toAdd, else you should add next element to sequence toAdd)
