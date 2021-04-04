@@ -30,3 +30,10 @@ orgingize BFS(Breadth First Search)\
 You have n and adjecency matrix(n\*n)\
 You should print array of indeces(array mark)\
 Each index(mark[i]) means when you visited that vertex(i)\
+
+## DFS.cpp
+
+orgingize DFS(Depth First Search)\
+You have n and adjecency matrix(n\*n)\
+You should print array of indeces(array mark)\
+Each index(mark[i]) means when you visited that vertex(i)\
