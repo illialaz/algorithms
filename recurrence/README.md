@@ -35,3 +35,12 @@ delete min number of elems from string to get palindrome\
 
 n, m - dim of bin matrix\
 find all square matrices from matrix, each elem of which equals to 1\
+
+## polygon.cpp
+
+n - number of vertices in polygon\
+Each vertex has a number
+Each side of polygon has operation(+ or \*)
+First step - delete one side of polygon(any side)\
+Then you can combine each 2 vertices to one by adding/multiplying them(depends of operation)\
+At the end you should have only one vertex without any side, and number of that vertex should be the greatest\
