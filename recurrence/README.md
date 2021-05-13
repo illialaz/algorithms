@@ -44,3 +44,9 @@ Each side of polygon has operation(+ or \*)
 First step - delete one side of polygon(any side)\
 Then you can combine each 2 vertices to one by adding/multiplying them(depends of operation)\
 At the end you should have only one vertex without any side, and number of that vertex should be the greatest\
+
+## strCompress.cpp
+
+You have a string and you should compress it\
+Rools:\
+AAAAABBBBAAAAABBBBC - 2(5(A)4(B))C\
