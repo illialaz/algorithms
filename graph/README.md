@@ -49,3 +49,7 @@ Otherwise you should pay only price of the road.\
 You should find lowest road from start to finish\
 First sten - from start go to all verteces you can\
 Then start dijkstra algorithm\
+
+## minCostFlow.cpp
+
+Find Min Cost Flow at the network(graph)\
