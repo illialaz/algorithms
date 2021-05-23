@@ -53,3 +53,8 @@ Then start dijkstra algorithm\
 ## minCostFlow.cpp
 
 Find Min Cost Flow at the network(graph)\
+
+## maxEdge.cpp
+
+Find max cost edge from one vertex to another\
+You should respond for m requests\
