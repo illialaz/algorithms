@@ -13,20 +13,21 @@
 
 using namespace std;
 
-const long long MAXN = 200001; // число вершин
-const long long INF = INT64_MAX;
+const int MAXN = 200001; // число вершин
+const int INF = INT32_MAX;
  
 struct edge {
-	long long a, b, cap, flow;
+	int a, cap;
+	long long flow;
 };
- 
-long long n, s, t, d[MAXN], ptr[MAXN], q[MAXN];
-vector<edge> e;
-vector<long long> g[MAXN];
 
-void add_edge (long long a, long long b, long long cap) {
-	edge e1 = { a, b, cap, 0 };
-	edge e2 = { b, a, 0, 0 };
+int n, s, t, d[MAXN], ptr[MAXN], q[MAXN];
+vector<edge> e;
+vector<int> g[MAXN];
+
+void add_edge (int a, int b, int cap) {
+	edge e1 = { b, cap, 0 };
+	edge e2 = { a, 0, 0 };
 	g[a].push_back ((long long) e.size());
 	e.push_back (e1);
 	g[b].push_back ((long long) e.size());
@@ -39,10 +40,10 @@ bool bfs() {
 	memset (d, -1, n * sizeof d[0]);
 	d[s] = 0;
 	while (qh < qt && d[t] == -1) {
-		long long v = q[qh++];
+		int v = q[qh++];
 		for (size_t i=0; i<g[v].size(); ++i) {
-			long long id = g[v][i],
-				to = e[id].b;
+			int id = g[v][i],
+				to = e[id].a;
 			if (d[to] == -1 && e[id].flow < e[id].cap) {
 				q[qt++] = to;
 				d[to] = d[v] + 1;
@@ -52,12 +53,12 @@ bool bfs() {
 	return d[t] != -1;
 }
 
-long long dfs (long long v, long long flow) {
+long long dfs (int v, long long flow) {
 	if (!flow)  return 0;
 	if (v == t)  return flow;
 	for (; ptr[v]<(long long)g[v].size(); ++ptr[v]) {
 		long long id = g[v][ptr[v]],
-			to = e[id].b;
+			to = e[id].a;
 		if (d[to] != d[v] + 1)  continue;
 		long long pushed = dfs (to, min (flow, e[id].cap - e[id].flow));
 		if (pushed) {
@@ -84,13 +85,13 @@ int main() {
   cin >> n;
   s = 0;
   t = n - 1;
-  long long m = 0;
+  int m = 0;
   cin >> m;
-  long long u = 0;
-  long long v = 0;
-  long long w = 0;
-  for(long long i = 0; i < m; i++) {
-    scanf("%llu %llu %llu", &u, &v, &w);
+  int u = 0;
+  int v = 0;
+  int w = 0;
+  for(int i = 0; i < m; i++) {
+    scanf("%d %d %d", &u, &v, &w);
     u--;
     v--;
     add_edge(u, v, w);
